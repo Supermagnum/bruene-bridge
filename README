@@ -46,4 +46,8 @@ The PFD file contains calculations for up to 2500 W, more than enough because th
 NOTE :
 MY PCB's has NOT been tested, use at YOUR OWN RISK ! 
 
+SWR Ratio is calculated this way = (Vforward + Vreflectef) / (Vforward - Vref).
+
+I am unsure of how one can measure the actual RF power, forward and reflected.
+
 
