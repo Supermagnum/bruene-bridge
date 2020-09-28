@@ -21,7 +21,7 @@ Adapt cross sectional area of wires in toroid to maximum current in R2, do not u
 
 Load on detector diodes is a first order parametre for rectified voltages output. Do not hesitate to use operational amplifiers LM358 or LM324 as buffers (they include GND in common mode range). In this case, with very high impedance detectors load, to avoid too high time constant in SWR readings, reduce, if necessary, the values of decoupling capacitors (ceramic) in FWD & REF outputs. 2.2 to 10 nF is OK with operational amplifiers, 100 nF or more without operational amplifiers.
 
-Source for text : F1FRV 's page :
+Source for text and original design : F1FRV 's page :
 http://f1frv.free.fr/main3h_SWR_Bridges.html
 
 All his original files are here, as a backup if his page goes down. :
