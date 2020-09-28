@@ -1,0 +1,45 @@
+SWR AND POWER MODIFIED BRUENE BRIDGES
+
+This design is applicable for small or high powers, from 100 kHz (or less) to 50 Mhz, from miliwatts to kilowatts, depending on the selected components. For best results, for WIDEBAND use the ferrite "43" material. Materials "4C6 or 4C65" generaly painted in purple, are identical to material "61" and can also be used (with much more turns than "43" for same inductance).
+
+
+With good electrical and mechanical design, using parts described here, and PCB designed for, 1.8 to 30 (50) MHz directivity can be better than 35 dB, and accuracy in power measurements in the range 1 to 2 %. 
+
+Generaly, if it dont works, it is with people more clever, and better technicians than me, who dont want to follow EXACTLY what is written, and do what they feel instead.
+
+
+Coaxial line shield must be grounded ONLY 1 side of toroid, 1 time at input connector, and 1 time just near toroid. Place the WIDE ground return strip(s), not a single wire, between coaxial line, circuit board and main ground frame, as close as possible to the toroid, to have the best accuracy in POWER measurements over a wide range of frequencies. For SWR measurements ONLY, this is not very important, as the ratio FWD/REF is independant of absolute values of detected voltages.To avoid parasitic capacitances, place the PCB at least 10 mm above metallic enclosures.
+
+To have perfect balance of the bridge, with the calculated values given by EXCEL sheet, it is important to know the " TRUE " values of the coil(s), resistor R2, and capacitor C1. To know what is the exact Al value of your toroid, coil 5 turns of wire into it, measure with a LC meter, and divide value by 25. With an Ohmmeter, adjust VR1 to the value given by excel sheet.The variable C2 capacitor, as shown, is MANDATORY, to compensate for all tolerances in components values, parasitics. During tests, dont hesitate to modify calculated value of C2 (fixed + adjustable value) to obtain the best balance.Tolerances and parasitic capacitances management are unfortunately not exact sciences. Adjustment of phase compensation C2 must be made, ONLY at bridge maximum frequency of use. If null is not OK with C2, readjust slightly VR1 and C2, at max frequency of use, to obtain perfect null. Reverse bridge in /out to check null symetry.
+
+Check of coil(s) and capacitor C1 exact values can be made with a LC meter, like the one described in pages " Technical " and proposed by DF1SR (ex DD0SB).
+
+Adapt cross sectional area of wires in toroid to maximum current in R2, do not undersize, 3 Amps by square milimeter is a maximum.
+
+Load on detector diodes is a first order parametre for rectified voltages output. Do not hesitate to use operational amplifiers LM358 or LM324 as buffers (they include GND in common mode range). In this case, with very high impedance detectors load, to avoid too high time constant in SWR readings, reduce, if necessary, the values of decoupling capacitors (ceramic) in FWD & REF outputs. 2.2 to 10 nF is OK with operational amplifiers, 100 nF or more without operational amplifiers.
+
+Source for text : F1FRV 's page :
+http://f1frv.free.fr/main3h_SWR_Bridges.html
+
+All his original files are here :
+https://www.dropbox.com/sh/5z0gi948c4xvl3s/AAAGcYLpj1rBukVIEuQfXs6Wa?dl=0
+
+What I have done:
+Made a PCB that uses more modern components , as a example is C2 variable cap.
+That one is impossible to use for a PCB design because the factory drawings is completely unreadable!
+So, I have made adjustments with a smaller adjustable one that goes from 5.5-65pF in paralell with a 100 pF one. So the range of adjustment is 105 to 165 pF.
+
+C1 is a 1pF ±0.5pF 4000V (4kV) Ceramic disc capacitator, clouse enough to the calulated 0,96 pF
+
+I have added solder connectors to SO-239 connectors, they will fit if they are soldered in a 45 degree angle as then two of the mounting screws and the center pin can be soldered directly to the board.
+I have also made a solder sone for the coax shield, with space to spare.
+
+R2 is a 30W Through Hole Resistor TO-220-2, in a suitable location for mounting to the sheilded box wall or a heat sink. 
+
+I also have added the DC values for reflected and forward voltages to the PDF file.
+
+The PFD file contains calculations for up to 2500 W, more than enough because the legal limit in many places is 1000 W.
+
+
+
+
