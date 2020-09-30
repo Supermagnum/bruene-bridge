@@ -8,9 +8,6 @@ This design is applicable for small or high powers, from 100 kHz (or less) to 50
 
 With good electrical and mechanical design, using parts described here, and PCB designed for, 1.8 to 30 (50) MHz directivity can be better than 35 dB, and accuracy in power measurements in the range 1 to 2 %. 
 
-Generaly, if it dont works, it is with people more clever, and better technicians than me, who dont want to follow EXACTLY what is written, and do what they feel instead.
-
-
 Coaxial line shield must be grounded ONLY 1 side of toroid, 1 time at input connector, and 1 time just near toroid. Place the WIDE ground return strip(s), not a single wire, between coaxial line, circuit board and main ground frame, as close as possible to the toroid, to have the best accuracy in POWER measurements over a wide range of frequencies. For SWR measurements ONLY, this is not very important, as the ratio FWD/REF is independant of absolute values of detected voltages.To avoid parasitic capacitances, place the PCB at least 10 mm above metallic enclosures.
 
 To have perfect balance of the bridge, with the calculated values given by EXCEL sheet, it is important to know the " TRUE " values of the coil(s), resistor R2, and capacitor C1. To know what is the exact Al value of your toroid, coil 5 turns of wire into it, measure with a LC meter, and divide value by 25. With an Ohmmeter, adjust VR1 to the value given by excel sheet.The variable C2 capacitor, as shown, is MANDATORY, to compensate for all tolerances in components values, parasitics. During tests, dont hesitate to modify calculated value of C2 (fixed + adjustable value) to obtain the best balance.Tolerances and parasitic capacitances management are unfortunately not exact sciences. Adjustment of phase compensation C2 must be made, ONLY at bridge maximum frequency of use. If null is not OK with C2, readjust slightly VR1 and C2, at max frequency of use, to obtain perfect null. Reverse bridge in /out to check null symetry.
@@ -49,5 +46,7 @@ MY PCB's has NOT been tested, use at YOUR OWN RISK !
 SWR Ratio is calculated this way = (Vforward + Vreflectef) / (Vforward - Vref).
 
 I am unsure of how one can measure the actual RF power, forward and reflected.
+
+A voltage divider on forward and reverse voltages has been added to reduce the voltage so a Aurdino can read them.
 
 
