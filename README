@@ -1,5 +1,6 @@
-SWR AND POWER MODIFIED BRUENE BRIDGES
+SWR AND POWER MODIFIED BRUENE BRIDGE.
 
+Circuit originally designed by F1FRV . 
 This design is applicable for small or high powers, from 100 kHz (or less) to 50 Mhz, from miliwatts to kilowatts, depending on the selected components. For best results, for WIDEBAND use the ferrite "43" material. Materials "4C6 or 4C65" generaly painted in purple, are identical to material "61" and can also be used (with much more turns than "43" for same inductance).
 
 
@@ -31,8 +32,14 @@ So, I have made adjustments with a smaller adjustable one that goes from 5.5-65p
 
 C1 is a 1pF ±0.5pF 4000V (4kV) Ceramic disc capacitator, clouse enough to the calulated 0,96 pF
 
-I have added solder connectors to SO-239 connectors, they will fit if they are soldered in a 45 degree angle as then two of the mounting screws and the center pin can be soldered directly to the board.
-I have also made a solder zone for the coax shield, with space to spare.
+I have added solder connectors to SO-239 connectors, 
+they will fit if they are soldered in a 45 degree angle as then two of the mounting screws and the center pin can be soldered directly to the board.
+It includes voltage dividers so the rectified forward and reverse voltages is suitable for a Aurdinos ADC ports ( 5v DC max ). 
+The traces that carries RF is 3mm wide, and short.
+It also includes a big area for soldering the coax cable shield to, 
+and a copper strap can also be used to squeeze the coax cable shield between the strap and PCB.
+It is also possible to mount grounding straps to the PCB. 
+
 
 R2 is a 30W Through Hole Resistor TO-220-2, in a suitable location for mounting to the sheilded box wall or a heat sink. 
 
