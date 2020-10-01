@@ -1,0 +1,32 @@
+Drill report for /home/haaken/Dokumenter/SWR bridge/SWR bridge.kicad_pcb
+Created on to. 01. okt. 2020 kl. 13.06 +0200
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'SWR bridge-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0,50mm  0,020"  (4 holes)
+    T2  0,70mm  0,028"  (14 holes)
+    T3  0,80mm  0,031"  (6 holes)
+    T4  1,00mm  0,039"  (10 holes)
+    T5  1,10mm  0,043"  (2 holes)
+    T6  1,30mm  0,051"  (6 holes)
+    T7  2,00mm  0,079"  (3 holes)  (with 1 slot)
+    T8  2,20mm  0,087"  (14 holes)
+    T9  3,00mm  0,118"  (2 holes)
+    T10  3,50mm  0,138"  (4 holes)
+    T11  4,00mm  0,157"  (2 holes)
+
+    Total plated holes count 67
+
+
+Drill file 'SWR bridge-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
