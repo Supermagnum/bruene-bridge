@@ -1,13 +1,12 @@
-Phase compencated VSWR Bridge
-
-NOTE :
-MY PCB's has NOT been tested, use at YOUR OWN RISK ! 
+SWR AND POWER MODIFIED BRUENE BRIDGES
 
 This design is applicable for small or high powers, from 100 kHz (or less) to 50 Mhz, from miliwatts to kilowatts, depending on the selected components. For best results, for WIDEBAND use the ferrite "43" material. Materials "4C6 or 4C65" generaly painted in purple, are identical to material "61" and can also be used (with much more turns than "43" for same inductance).
 
-The PCB board and its components must be mounted in a shielded enclosure.
 
 With good electrical and mechanical design, using parts described here, and PCB designed for, 1.8 to 30 (50) MHz directivity can be better than 35 dB, and accuracy in power measurements in the range 1 to 2 %. 
+
+Generaly, if it dont works, it is with people more clever, and better technicians than me, who dont want to follow EXACTLY what is written, and do what they feel instead.
+
 
 Coaxial line shield must be grounded ONLY 1 side of toroid, 1 time at input connector, and 1 time just near toroid. Place the WIDE ground return strip(s), not a single wire, between coaxial line, circuit board and main ground frame, as close as possible to the toroid, to have the best accuracy in POWER measurements over a wide range of frequencies. For SWR measurements ONLY, this is not very important, as the ratio FWD/REF is independant of absolute values of detected voltages.To avoid parasitic capacitances, place the PCB at least 10 mm above metallic enclosures.
 
@@ -19,10 +18,10 @@ Adapt cross sectional area of wires in toroid to maximum current in R2, do not u
 
 Load on detector diodes is a first order parametre for rectified voltages output. Do not hesitate to use operational amplifiers LM358 or LM324 as buffers (they include GND in common mode range). In this case, with very high impedance detectors load, to avoid too high time constant in SWR readings, reduce, if necessary, the values of decoupling capacitors (ceramic) in FWD & REF outputs. 2.2 to 10 nF is OK with operational amplifiers, 100 nF or more without operational amplifiers.
 
-Source for text and original design : F1FRV 's page :
+Source for text : F1FRV 's page :
 http://f1frv.free.fr/main3h_SWR_Bridges.html
 
-All his original files are here, as a backup if his page goes down. :
+All his original files are here :
 https://www.dropbox.com/sh/5z0gi948c4xvl3s/AAAGcYLpj1rBukVIEuQfXs6Wa?dl=0
 
 What I have done:
@@ -30,7 +29,7 @@ Made a PCB that uses more modern components , as a example is C2 variable cap.
 That one is impossible to use for a PCB design because the factory drawings is completely unreadable!
 So, I have made adjustments with a smaller adjustable one that goes from 5.5-65pF in paralell with a 100 pF one. So the range of adjustment is 105 to 165 pF.
 
-C1 is a 1pF ±0.5pF 4000V (4kV) Ceramic disc capacitator, clouse enough to the calulated 0,96 pF.
+C1 is a 1pF ±0.5pF 4000V (4kV) Ceramic disc capacitator, clouse enough to the calulated 0,96 pF
 
 I have added solder connectors to SO-239 connectors, they will fit if they are soldered in a 45 degree angle as then two of the mounting screws and the center pin can be soldered directly to the board.
 I have also made a solder sone for the coax shield, with space to spare.
@@ -41,14 +40,6 @@ I also have added the DC values for reflected and forward voltages to the PDF fi
 
 The PFD file contains calculations for up to 2500 W, more than enough because the legal limit in many places is 1000 W.
 
-NOTE :
-MY PCB's has NOT been tested, use at YOUR OWN RISK ! 
 
-SWR Ratio is calculated this way = (Vforward + Vreflectef) / (Vforward - Vref).
-
-I am unsure of how one can measure the actual RF power, forward and reflected. At least it involves mesuring a voltage and use it as a correction factor.
-So, I have added a pin labeled KF for that.
-
-A voltage divider on forward and reverse voltages has been added to reduce the voltage so a Aurdino can read them.
 
 
