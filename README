@@ -45,7 +45,8 @@ MY PCB's has NOT been tested, use at YOUR OWN RISK !
 
 SWR Ratio is calculated this way = (Vforward + Vreflectef) / (Vforward - Vref).
 
-I am unsure of how one can measure the actual RF power, forward and reflected.
+I am unsure of how one can measure the actual RF power, forward and reflected. At least it involves mesuring a voltage and use it as a correction factor.
+So, I have added a pin labeled KF for that.
 
 A voltage divider on forward and reverse voltages has been added to reduce the voltage so a Aurdino can read them.
 
