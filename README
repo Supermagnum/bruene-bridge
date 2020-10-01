@@ -32,11 +32,10 @@ So, I have made adjustments with a smaller adjustable one that goes from 5.5-65p
 C1 is a 1pF ±0.5pF 4000V (4kV) Ceramic disc capacitator, clouse enough to the calulated 0,96 pF
 
 I have added solder connectors to SO-239 connectors, they will fit if they are soldered in a 45 degree angle as then two of the mounting screws and the center pin can be soldered directly to the board.
-I have also made a solder sone for the coax shield, with space to spare.
+I have also made a solder zone for the coax shield, with space to spare.
 
 R2 is a 30W Through Hole Resistor TO-220-2, in a suitable location for mounting to the sheilded box wall or a heat sink. 
 
-I also have added the DC values for reflected and forward voltages to the PDF file.
 
 The PFD file contains calculations for up to 2500 W, more than enough because the legal limit in many places is 1000 W.
 
