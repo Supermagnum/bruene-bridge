@@ -5,6 +5,7 @@ MY PCB's has NOT been tested, use at YOUR OWN RISK !
 
 This design is applicable for small or high powers, from 100 kHz (or less) to 50 Mhz, from miliwatts to kilowatts, depending on the selected components. For best results, for WIDEBAND use the ferrite "43" material. Materials "4C6 or 4C65" generaly painted in purple, are identical to material "61" and can also be used (with much more turns than "43" for same inductance).
 
+The PCB board and its components must be mounted in a shielded enclosure.
 
 With good electrical and mechanical design, using parts described here, and PCB designed for, 1.8 to 30 (50) MHz directivity can be better than 35 dB, and accuracy in power measurements in the range 1 to 2 %. 
 
