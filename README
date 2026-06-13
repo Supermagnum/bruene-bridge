@@ -43,6 +43,7 @@ R2 is a 30W Through Hole Resistor TO-220-2, in a suitable location for mounting 
 
 
 The PFD file contains calculations for up to 2500 W, more than enough because the legal limit in many places is 1000 W.
+https://github.com/Supermagnum/bruene-bridge/blob/master/SWR-bridge.pdf
 
 All components is THT.
 
